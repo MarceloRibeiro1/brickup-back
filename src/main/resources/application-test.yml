@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    url: org.h2.Driver
+    username: root
+    password: rootpassword
+  jpa:
+    defer-datasource-initialization: true

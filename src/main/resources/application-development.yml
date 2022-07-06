@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/brickdb
+    username: root
+    password: rootpassword
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate: show_sql=true
+  servlet:
+    multipart:
+      max-file-size: 128KB
+      max-request-size: 128KB
