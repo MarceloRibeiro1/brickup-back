@@ -40,7 +40,7 @@ public class TaskController {
             return new ResponseEntity<>(createdTask, HttpStatus.CREATED);
         } catch (RuntimeException e) {
             System.err.println(e);
-            return new ResponseEntity<>(HttpStatus.BAD_GATEWAY);
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         } catch (Exception e) {
             return null;
         }
